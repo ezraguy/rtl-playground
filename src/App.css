@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .counter {
@@ -16,4 +18,31 @@
 .counter .counter-amount {
   font-size: 3rem;
   font-weight: 600;
+}
+
+.counter .buttons {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.counter .buttons .add-btn,
+.counter .buttons .sub-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 1px solid rgba(212, 207, 207, 0.726);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: scale 0.4s ease;
+}
+
+.counter .buttons .add-btn:hover,
+.counter .buttons .sub-btn:hover {
+  scale: 1.1;
 }
