@@ -7,7 +7,9 @@ const Counter = () => {
   };
   return (
     <div className="counter">
-      <h3 className="title">My Counter</h3>
+      <h3 data-testid="title" className="title">
+        My Counter
+      </h3>
       <div data-testid="counter-value" className="counter-amount">
         {counterAmount}
       </div>
